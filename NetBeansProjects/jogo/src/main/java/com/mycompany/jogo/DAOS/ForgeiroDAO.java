@@ -4,6 +4,7 @@ import com.mycompany.jogo.DAOS.utils.Conexao;
 import com.mycompany.jogo.classes.Forgeiro;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 import java.sql.SQLException;
@@ -45,9 +46,9 @@ public class ForgeiroDAO {
                 System.out.println("Forgeiro cadastrado com sucesso!!");}
             }
         
-         public  List<Sapato> Listagem() throws SQLException{
+         public  List<Forgeiro> Listagem() throws SQLException{
              String sql = "SELECT * FROM sapato";
-            List<Sapato> Listasapato = new ArrayList<>();
+            List<Forgeiro> Listaforgeiro = new ArrayList<>();
             Conexao conexao = new Conexao();
         
             Connection connection =  conexao.conectar();
@@ -56,17 +57,20 @@ public class ForgeiroDAO {
            
             ResultSet rs = stmt.executeQuery();
             while (rs.next()){
-                Sapato sapato = new Sapato(                
-                rs.getInt("codigo"),
+                Forgeiro forgeiro = new Forgeiro(  
                 rs.getString("nome"),
-                rs.getString("marca"),
-                rs.getInt("numero"),
-                rs.getDouble("preco"),
-                rs.getInt("estoque")
+                rs.getInt("id"),
+                rs.getDouble("larp"),
+                rs.getString("especialidade"),
+                rs.getInt("nivel"),
+                rs.getDouble("velocidade"),
+                rs.getDouble("forca"),
+                rs.getDouble("capacidade"),
+                rs.getDouble("energia")
                 );
-                Listasapato.add(sapato);
+                Listaforgeiro.add(forgeiro);
             }
-            return Listasapato;
+            return Listaforgeiro;
                     
             
            
