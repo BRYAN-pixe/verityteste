@@ -15,8 +15,8 @@ public class ForgeiroController {
      ForgeiroDAO dao = new ForgeiroDAO();
    
     
-    public void inserirForgeiro(int id, String nome, double larp, String especialidade, int nivel, double velocidade,  double forca, double capacidade, double energia){
-        Forgeiro forgeiro = new Forgeiro (nome, id, larp, especialidade, nivel, velocidade, forca, capacidade, energia);
+    public void inserirforgeiro(String nome, double larp, String especialidade, int nivel, double velocidade,  double forca, double capacidade, double energia){
+        Forgeiro forgeiro = new Forgeiro (nome, larp, especialidade, nivel, velocidade, forca, capacidade, energia);
         
            try {
                

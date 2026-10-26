@@ -16,6 +16,20 @@ public class Forgeiro {
     private double capacidade;
     private double energia;
 
+    public Forgeiro(String nome, double larp, String especialidade, int nivel, double forca, double velocidade, double capacidade, double energia) {
+        this.nome = nome;
+        this.larp = larp;
+        this.especialidade = especialidade;
+        this.nivel = nivel;
+        this.forca = forca;
+        this.velocidade = velocidade;
+        this.capacidade = capacidade;
+        this.energia = energia;
+    }
+
+    
+    
+    
     public Forgeiro(String nome, int id, double larp, String especialidade, int nivel, double forca, double velocidade, double capacidade, double energia) {
         this.nome = nome;
         this.id = id;
