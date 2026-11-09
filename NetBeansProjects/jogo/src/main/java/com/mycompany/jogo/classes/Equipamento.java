@@ -13,7 +13,7 @@ public class Equipamento {
     private double durabilidade;
     private int encantamento;
 
-    public Equipamento(String nome_equi, int nivel_equi, int id_equi, String tipo, double durabilidade, int encantamento) {
+    public Equipamento(int id_equi, String nome_equi, int nivel_equi, String tipo, double durabilidade, int encantamento) {
         this.nome_equi = nome_equi;
         this.nivel_equi = nivel_equi;
         this.id_equi = id_equi;
@@ -21,6 +21,16 @@ public class Equipamento {
         this.durabilidade = durabilidade;
         this.encantamento = encantamento;
     }
+
+    public Equipamento(String nome_equi, int nivel_equi, String tipo, double durabilidade, int encantamento) {
+        this.nome_equi = nome_equi;
+        this.nivel_equi = nivel_equi;
+        this.tipo = tipo;
+        this.durabilidade = durabilidade;
+        this.encantamento = encantamento;
+    }
+    
+    
 
     public Equipamento(String nome_equi, String tipo) {
         this.nome_equi = nome_equi;

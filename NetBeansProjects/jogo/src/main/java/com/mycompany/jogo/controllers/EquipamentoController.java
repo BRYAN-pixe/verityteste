@@ -14,8 +14,8 @@ public class EquipamentoController {
          EquipamentoDAO dao = new EquipamentoDAO();
    
     
-    public void inserirequipamento(String nome_equi, int nivel_equi,  int id_equi, String tipo, double durabilidade, int encantamento){
-        Equipamento equipamento = new Equipamento(nome_equi, nivel_equi, id_equi, tipo, durabilidade, encantamento );
+    public void inserirequipamento(int id_equi, String nome_equi,  int nivel_equi, String tipo, double durabilidade, int encantamento){
+        Equipamento equipamento = new Equipamento(id_equi, nome_equi, nivel_equi, tipo, durabilidade, encantamento );
         
            try {
                

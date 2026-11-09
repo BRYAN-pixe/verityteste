@@ -99,9 +99,8 @@ import java.util.List;
             ResultSet rs = stmt.executeQuery();
             while (rs.next()){
                 Equipamento equipamento = new Equipamento(  
-               
-                rs.getString("nome_equi"),
                 rs.getInt("id_equi"),
+                rs.getString("nome_equi"),
                 rs.getInt("nivel_equi"),
                 rs.getString("tipo"),
                 rs.getDouble("durabilidade"),

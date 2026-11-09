@@ -22,7 +22,7 @@ public class ForgeiroDAO {
             
             
             
-        String sql = "INSERT INTO Forgeiro(id, nome, larp, especialidade, nivel, forca, velocidade, capacidade, energia ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO forgeiro(id, nome, larp, especialidade, nivel, forca, velocidade, capacidade, energia ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
        Conexao conexao = new Conexao();
         
             Connection connection =  conexao.conectar();
