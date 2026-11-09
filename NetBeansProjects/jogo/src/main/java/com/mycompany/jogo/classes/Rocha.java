@@ -22,6 +22,12 @@ public class Rocha {
         this.valor = valor;
     }
 
+    public Rocha(String nome_roc, int material) {
+        this.nome_roc = nome_roc;
+        this.material = material;
+    }
+    
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

@@ -46,8 +46,49 @@ public class ForgeiroDAO {
                 System.out.println("Forgeiro cadastrado com sucesso!!");}
             }
         
+        public void editarforgeiro (Forgeiro forgeiro) throws SQLException{
+                
+        String sql = "UPDATE forgeiro set nome=? where id=?";
+       Conexao conexao = new Conexao();
+        
+            Connection connection =  conexao.conectar();
+            PreparedStatement stmt = connection.prepareStatement(sql);
+           
+           stmt.setString(1, forgeiro.getNome());
+           stmt.setInt(2, forgeiro.getId());
+         
+            
+            int linhasAfetadas = stmt.executeUpdate();
+            
+            if (linhasAfetadas > 0){
+                System.out.println("Forgeiro atualizado com sucesso!!");}
+            }
+        
+        public void deletarforgeiro (int id) throws SQLException{
+                
+        String sql = "DELETE forgeiro where id=?";
+       Conexao conexao = new Conexao();
+        
+            Connection connection =  conexao.conectar();
+            PreparedStatement stmt = connection.prepareStatement(sql);
+           
+    
+           stmt.setInt(1, id);
+        
+         
+            
+            int linhasAfetadas = stmt.executeUpdate();
+            
+            if (linhasAfetadas > 0){
+                System.out.println("Forgeiro deletado com sucesso!!");}
+            else {
+            System.out.println("Nenhum forgeiro foi encontrado com o ID: " + id);
+        }
+            }
+
+        
          public  List<Forgeiro> Listagem() throws SQLException{
-             String sql = "SELECT * FROM sapato";
+             String sql = "SELECT * FROM forgeiro";
             List<Forgeiro> Listaforgeiro = new ArrayList<>();
             Conexao conexao = new Conexao();
         

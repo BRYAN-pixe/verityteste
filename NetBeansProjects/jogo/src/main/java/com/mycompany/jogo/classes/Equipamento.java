@@ -22,6 +22,18 @@ public class Equipamento {
         this.encantamento = encantamento;
     }
 
+    public Equipamento(String nome_equi, String tipo) {
+        this.nome_equi = nome_equi;
+        this.tipo = tipo;
+    }
+
+    public Equipamento(String nome_equi, int id_equi) {
+        this.nome_equi = nome_equi;
+        this.id_equi = id_equi;
+    }
+    
+    
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

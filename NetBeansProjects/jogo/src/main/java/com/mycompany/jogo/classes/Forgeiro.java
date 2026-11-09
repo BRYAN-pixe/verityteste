@@ -27,6 +27,15 @@ public class Forgeiro {
         this.energia = energia;
     }
 
+    public Forgeiro(String nome, int id) {
+        this.nome = nome;
+        this.id = id;
+    }
+
+    public Forgeiro(int id) {
+        this.id = id;
+    }
+
     
     
     

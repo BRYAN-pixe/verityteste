@@ -26,8 +26,27 @@ public class ForgeiroController {
            
             System.out.println(e);
         } 
+    }
+  public void editarforgeiro (int id, String nome){
+        Forgeiro forgeiro = new Forgeiro (nome, id);
+        try{
+        dao.editarforgeiro(forgeiro);
+        }catch(SQLException e) {
+            System.out.println(e);
+        } 
        
     }
+  public void deletarforgeiro (int id){
+  
+        try{
+        dao.deletarforgeiro(id);
+        }catch(SQLException e) {
+            System.out.println(e);
+        } 
+       
+    }
+       
+    
     public void Listagem(){
         
         

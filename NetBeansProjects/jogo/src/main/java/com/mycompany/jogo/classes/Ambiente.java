@@ -6,25 +6,33 @@ package com.mycompany.jogo.classes;
  */
 public class Ambiente {
     
-    private String nome;
+    private String nome_amb;
     private int id_amb;
     private String descricao;
     private String minerios;
     private int nivel_min;
 
-    public Ambiente(String nome, int id_amb, String descricao, String minerios, int nivel_min) {
-        this.nome = nome;
+    public Ambiente(String nome_amb, int id_amb, String descricao, String minerios, int nivel_min) {
+        this.nome_amb = nome_amb;
         this.id_amb = id_amb;
         this.descricao = descricao;
         this.minerios = minerios;
         this.nivel_min = nivel_min;
     }
 
+    public Ambiente(String nome_amb, int id_amb, String descricao) {
+        this.nome_amb = nome_amb;
+        this.id_amb = id_amb;
+        this.descricao = descricao;
+    }
+
+    
+    
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Ambiente{");
-        sb.append("nome=").append(nome);
+        sb.append("nome_amb=").append(nome_amb);
         sb.append(", id_amb=").append(id_amb);
         sb.append(", descricao=").append(descricao);
         sb.append(", minerios=").append(minerios);
@@ -43,12 +51,12 @@ public class Ambiente {
         this.nivel_min = nivel_min;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNome_amb() {
+        return nome_amb;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNome_amb(String nome_amb) {
+        this.nome_amb = nome_amb;
     }
 
     public int getId_amb() {
