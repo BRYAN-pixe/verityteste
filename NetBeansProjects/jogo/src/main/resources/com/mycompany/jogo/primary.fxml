@@ -1,20 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Button?>
 <?import javafx.geometry.Insets?>
 
-<VBox alignment="CENTER" spacing="20.0" style="-fx-background-image: url('/com/mycompany/jogo/reserva.png'); -fx-background-size: cover; -fx-background-position: center; -fx-background-repeat: no-repeat;"
+<VBox alignment="CENTER" spacing="400.0" style="-fx-background-image: url('/com/mycompany/jogo/satanas.png'); -fx-background-size: cover; -fx-background-position: center; -fx-background-repeat: no-repeat;"
       xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.jogo.PrimaryController">
     
          
-<Label text="Forgeiro" />
-      <Button text="Novo jogo" onAction="#switchToSecondary" style="-fx-background-color: black; -fx-text-fill: white; -fx-font-size: 14px;" />
-      <Button text="Ranking" onAction="#switchToSecondary"/>
-      <Button text="Creditos" onAction="#switchToSecondary"/>
-      <Button text="sair" onAction="#switchToSecondary"/>
-   <padding>
+    
+    
+    
+    
+    <VBox spacing="100.0" alignment="CENTER_LEFT" >
+        
+        <Label text="Mining master" style="-fx-text-fill: linear-gradient(#B32E2A, #E19E3B); -fx-font-size: 140px;" />
+        
+      <Button text="Novo jogo" onAction="#switchToSecondary" style="-fx-background-color: black; -fx-text-fill: white; -fx-font-size: 40px; -fx-background-radius: 30;" />
+      <Button text="Equipamentos" onAction="#switchToSecondary" style="-fx-background-color: black; -fx-text-fill: silver; -fx-font-size: 40px; -fx-background-radius: 30;" />
+       <Button text="Minérios" onAction="#switchToSecondary" style="-fx-background-color: black; -fx-text-fill: lime; -fx-font-size: 40px; -fx-background-radius: 30;" />
+      <Button text="Cavernas" onAction="#switchToSecondary" style="-fx-background-color: black; -fx-text-fill: cyan; -fx-font-size: 40px; -fx-background-radius: 30;" />
+     
+      
+      
+   </VBox>
+      <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
    </padding>
 </VBox>
