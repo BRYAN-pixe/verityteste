@@ -43,6 +43,7 @@ public class Equipamento {
     }
     
     
+    
 
     @Override
     public String toString() {

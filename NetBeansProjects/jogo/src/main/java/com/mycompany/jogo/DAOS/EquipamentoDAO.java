@@ -24,18 +24,17 @@ import java.util.List;
             
             
             
-        String sql = "INSERT INTO equipamento(id_equi, nome_equi, nivel_equi, tipo, durabilidade, encantamento ) VALUES (?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO equipamento( nome_equi, nivel_equi, tipo, durabilidade, encantamento ) VALUES (?, ?, ?, ?, ?)";
        Conexao conexao = new Conexao();
         
             Connection connection =  conexao.conectar();
             PreparedStatement stmt = connection.prepareStatement(sql);
-           
-           stmt.setInt(1, equipamento.getId_equi());
-           stmt.setString(2, equipamento.getNome_equi());
-           stmt.setInt(3, equipamento.getNivel_equi());
-           stmt.setString(4, equipamento.getTipo());
-           stmt.setDouble(5, equipamento.getDurabilidade());
-           stmt.setInt(6, equipamento.getEncantamento());
+            
+           stmt.setString(1, equipamento.getNome_equi());
+           stmt.setInt(2, equipamento.getNivel_equi());
+           stmt.setString(3, equipamento.getTipo());
+           stmt.setDouble(4, equipamento.getDurabilidade());
+           stmt.setInt(5, equipamento.getEncantamento());
           
           
          
