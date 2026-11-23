@@ -17,7 +17,7 @@
         
         <Label text="Mining master" style="-fx-text-fill: linear-gradient(#B32E2A, #E19E3B); -fx-font-size: 140px;" />
         
-      <Button text="Novo jogo" onAction="#switchToSecondary" style="-fx-background-color: black; -fx-text-fill: white; -fx-font-size: 40px; -fx-background-radius: 30;" />
+      <Button text="Novo jogo"  onAction="#switchToSecondary" style="-fx-background-color: black; -fx-text-fill: white; -fx-font-size: 40px; -fx-background-radius: 30; -fx-font-family: 'Exo 2';" />
       <Button text="Equipamentos" onAction="#switchToSecondary" style="-fx-background-color: black; -fx-text-fill: silver; -fx-font-size: 40px; -fx-background-radius: 30;" />
        <Button text="Minérios" onAction="#switchToSecondary" style="-fx-background-color: black; -fx-text-fill: lime; -fx-font-size: 40px; -fx-background-radius: 30;" />
       <Button text="Cavernas" onAction="#switchToSecondary" style="-fx-background-color: black; -fx-text-fill: cyan; -fx-font-size: 40px; -fx-background-radius: 30;" />
