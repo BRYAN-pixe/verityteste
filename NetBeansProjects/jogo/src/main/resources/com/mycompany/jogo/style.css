@@ -54,3 +54,33 @@
     -fx-background-color: #813D24;
     -fx-translate-x: 3px;
 }
+.forgeiro{
+    -fx-font-family: 'Rajdhani';
+    -fx-font-size: 105px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #323138;
+    -fx-background-color: #141F33;
+    -fx-letter-spacing: 30px;
+    -fx-background-radius: 100px;
+    -fx-border-color: #002263;
+    -fx-border-width: 3px;
+    -fx-border-radius: 100px;
+    -fx-pref-width: 1500px;
+    -fx-pref-height: 100px;
+    -fx-alignment: center;
+}
+.car{
+    -fx-font-family: 'Rajdhani';
+    -fx-font-size: 90px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #D44700;
+    -fx-background-color: #FF8545;
+    -fx-letter-spacing: 2px;
+    -fx-background-radius: 80px;
+    -fx-border-color: #FF6617;
+    -fx-border-width: 2px;
+    -fx-border-radius: 80px;
+    -fx-pref-width: 350px;
+    -fx-pref-height: 100px;
+    -fx-alignment: center;
+}
