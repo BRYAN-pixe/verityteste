@@ -1,0 +1,56 @@
+.game-title {
+    -fx-font-family: 'Rajdhani';
+    -fx-font-size: 76px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #E4773F;
+}
+
+/* SUBTITULO */
+.game-subtitle {
+    -fx-font-family: 'Rajdhani';
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #D0C3B8;
+    -fx-letter-spacing: 3px;
+}
+
+/* BOTOES */
+.menu-button {
+    -fx-background-color: #202B34;
+    -fx-text-fill: #F2E8DE;
+    -fx-font-family: 'Rajdhani';
+    -fx-font-size: 27px;
+    -fx-font-weight: bold;
+
+    -fx-min-width: 280px;
+    -fx-pref-height: 65px;
+
+    -fx-background-radius: 8px;
+    -fx-border-color: #9C542F;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 8px;
+
+    -fx-cursor: hand;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10px 25px;
+
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(0,0,0,0.45),
+        8, 0.2, 0, 3
+    );
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+.menu-button:hover {
+    -fx-background-color: #B85B32;
+    -fx-text-fill: white;
+    -fx-border-color: #E88A52;
+    -fx-translate-x: 8px;
+}
+
+/* QUANDO CLICAR */
+.menu-button:pressed {
+    -fx-background-color: #813D24;
+    -fx-translate-x: 3px;
+}
